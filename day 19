@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("After swap: a = %d, b = %d", a, b);
+    return 0;
+}
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+a, b = b, a
+print("After swap: a =", a, "b =", b)
