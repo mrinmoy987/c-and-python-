@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+    int num, i, flag = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for (i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if (num <= 1)
+        printf("Not Prime");
+    else if (flag == 0)
+        printf("Prime");
+    else
+        printf("Not Prime");
+    return 0;
+}
+
+num = int(input("Enter a number: "))
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not Prime")
