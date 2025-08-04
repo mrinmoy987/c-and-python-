@@ -1,0 +1,15 @@
+num = input("Enter a number: ")
+print("Sum of digits:", sum(int(digit) for digit in num))
+
+  #include <stdio.h>
+int main() {
+    int num, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while (num != 0) {
+        num /= 10;
+        count++;
+    }
+    printf("Digits: %d", count);
+    return 0;
+}
